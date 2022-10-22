@@ -14,11 +14,11 @@ const Options = () => {
         {plays.map((item) => (
           <div
             key={item.name}
-            className={`border-${item.border}    border-12 bg-white rounded-full z-20 hover:bg-green-200 ${item.rotate}`}
+            className={`${item.border}    border-12 bg-white rounded-full z-20 hover:bg-green-200 ${item.rotate}`}
           >
             <NavLink className="" to={`/${item.name}`}>
               <img
-                className={`border-${item.border}  object-cover w-24 p-3 hover:p-0  rounded-full `}
+                className={`${item.border}  object-cover w-24 p-3 hover:p-0  rounded-full `}
                 src={item.img}
                 alt=""
               />
