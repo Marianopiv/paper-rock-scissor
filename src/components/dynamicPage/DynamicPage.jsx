@@ -54,11 +54,11 @@ const DynamicPage = () => {
         <div onClick={reset} className="hover:cursor-pointer">
           <NavBar />
         </div>
-        <div className="flex justify-center flex-wrap sm:flex-nowrap sm:gap-20 gap-10 mt-5 sm:mt-20 items-center">
+        <div className="flex justify-center flex-wrap sm:flex-nowrap sm:gap-20 gap-5 mt-5 sm:mt-20 items-center">
           {selected && (
             <>
-              <div className="flex flex-col items-center gap-10">
-                <h1 className="leading-none font-mono font-bold sm:text-2xl uppercase">
+              <div className="flex flex-col items-center gap-5 sm:gap-10 w-44">
+                <h1 className="leading-none font-mono px-10 font-bold sm:text-2xl uppercase">
                   You Picked
                 </h1>
                 <OptionDetail
@@ -74,8 +74,8 @@ const DynamicPage = () => {
           {winner && (
             <>
               {" "}
-              <div className="flex flex-col items-center gap-2 sm:gap-5 sm:mt-20">
-                <h3 className="leading-none font-mono font-bold text-4xl uppercase">
+              <div className="flex flex-col items-center gap-2 sm:gap-5 sm:mt-20 px-10">
+                <h3 className="text-center leading-none font-mono font-bold text-4xl uppercase">
                   {winner}
                 </h3>
                 <button
@@ -89,7 +89,7 @@ const DynamicPage = () => {
           )}
           {pcSelection && (
             <>
-              <div className="flex flex-col items-center gap-10">
+              <div className="flex flex-col items-center gap-5 sm:gap-10">
                 <h1 className="leading-none font-mono font-bold sm:text-2xl uppercase">
                   The House Picked
                 </h1>
