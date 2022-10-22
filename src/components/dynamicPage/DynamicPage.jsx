@@ -58,7 +58,7 @@ const DynamicPage = () => {
           {selected && (
             <>
               <div className="flex flex-col items-center gap-5 sm:gap-10 w-44">
-                <h1 className="leading-none font-mono px-10 font-bold sm:text-2xl uppercase">
+                <h1 className="text-center leading-none font-mono px-10 font-bold sm:text-2xl uppercase">
                   You Picked
                 </h1>
                 <OptionDetail
